@@ -1,0 +1,38 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  background: #1d1e22;
+}
+
+.flex {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.square {
+  box-shadow: 1px 1px 2px gray,  -1px -1px 2px gray;
+  cursor: pointer;
+}
+
+.color-square {
+   cursor: pointer;
+   border: 1px solid transparent;
+}
+.active {
+     box-shadow: 1px 1px 2px gray,  -1px -1px 2px gray;
+     border: 1px solid white;
+}
