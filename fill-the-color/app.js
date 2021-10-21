@@ -1,6 +1,6 @@
 let spotterContainer = document.querySelector(".color-spotter-container");
 let colorContainer = document.querySelector(".color-container");
-let colorToFill = '';
+let colorToFill = 'white';
 let SQUARE = 14;
 let gridColor = 'white';
 
@@ -24,6 +24,7 @@ function generateGrid(SQUARE, container, flag) {
               inner.onclick = selectColor.bind(inner, j);
             } else {
                inner.onclick = setAnswer.bind(inner, i, j);
+               inner.onmouseover = setAnswer.bind(inner, i, j);
             }
             outer.append(inner);
         }
